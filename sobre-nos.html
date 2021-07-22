@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CellShop - Sobre nós</title>
+</head>
+<body onload="slide()">
+<div class="sobre-nos-container">
+   <div class="container">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagens/logotipo.png" alt="">
+                <p><strong>CellShop</strong></p>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="sobre-nos.html" class="active">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="fale-conosco.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<section class="sobre-nos-container">
+    <div class="container">
+       <div class="sobre-items">
+        <div class="sobre-1">
+           <img src="imagens/equipe.jpg" alt="" id="imagemEquipe" onClick="abrir()">
+        </div>
+        <div class="sobre-2">
+            <p>Nossa história pode ser recente, mas já alcançamos grandes metas
+            e possuímos diversos clientes satisfeitos que sempre retornam boas experiências com 
+            nossos produtos!</p>
+            <p>
+                Atualmente temos 6 funcionários super dedicados, são eles: Reynaldo Candido, Bruna Muse, Ana Carolina, Wilson Fisk, Carol Keys, Natalia Mavis
+            </p>
+        </div>
+       </div>
+    </div>
+</section>
+<section class="qualidades">
+    <div class="container">
+        <div class="qualidades-box">
+            <img src="imagens/estrela.png" alt="">
+            <div class="qualidades-texto">
+                <h1>Missão</h1>
+                <p>Nosso foco na CellShop é criar vinculos com clientes satisfeitos, entregar sempre
+                    a maior qualidade de produtos disponíveis no mercado, afim de que possamos crescer
+                    como empresa e fazer a diferença no nosso segmento de e-commerce.
+                </p>
+            </div>
+        </div>
+        <div class="qualidades-box">
+            <div class="qualidades-texto">
+                <h1>Valores</h1>
+                <p>Prezamos pela inclusão de minorias em todos os nossos departamentos, não toleramos
+                    qualquer tipo de discriminação e possuimos um rápido atendimento caso algum tipo
+                    de incidente aconteça.
+                </p>
+            </div>
+            <img src="imagens/estrela.png" alt="">
+        </div>
+        <div class="qualidades-box">
+            <img src="imagens/estrela.png" alt="">
+            <div class="qualidades-texto">
+                <h1>Visão</h1>
+                <p>A CellShop vem crescendo muito nos últimos meses, e nosso prognóstico pro futuro é de mais
+                    crescimento e amadurecimento, almejamos em um futuro breve obter reconhecimento no ramo 
+                    de vendas de celulares.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer >
+    <p style="color: black;">Feito por Reynaldo Candido para APS Dev. Web. Todos os direitos reservados © </p>
+</footer>
+<div id="modal-imagem" class="modal-container">
+    <div class="modal">
+        <button class="fechar" onclick="fechar()">x</button>
+        <h3>Foto da nossa equipe!</h3>
+        <img src="imagens/equipe.jpg" alt="">
+    </div>
+</div>
+</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

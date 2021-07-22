@@ -1,0 +1,27 @@
+create database projeto_login;
+use projeto_login;
+
+create table usuarios (
+id_usuario int auto_increment primary key,
+nome varchar(40),
+telefone varchar(30),
+cpf varchar(14),
+email varchar(40),
+senha varchar(32)
+);
+
+desc usuarios;
+
+select * from usuarios;
+
+create table produtos (
+id_Produto int auto_increment primary key,
+nomeProduto varchar(40),
+armazenamento int(3), 
+preco varchar(8)
+);
+
+select * from produtos;
+
+
+desc produtos;

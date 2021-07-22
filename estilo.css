@@ -1,0 +1,424 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ body {
+     background-image: url("../imagens/");
+     background-position: center;
+     font-family: Arial, Helvetica, sans-serif;
+     color:black;
+ }
+
+ .iphone-bg {
+    background: url('imagens/iphone-bg.jpeg');
+    height: 100%;
+ }
+.index-banner {
+    height: 705px;
+    background-color: #771eff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.logo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color:whitesmoke;
+}
+header {
+    background-color:#771eff;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+nav ul li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(245, 245, 245, 0.685);
+}
+.active {
+    border-bottom: 3px solid rgba(245, 245, 245, 0.685);
+    padding-bottom: 5px;
+}
+.banner-info-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-img img {
+    width: 600px;
+}
+.banner-info p, .titulo-banner-produtos p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.link-sobre-nos{
+    text-decoration: none;
+    background-color: #00dbe8;
+    padding: 10px 30px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+}
+.link-sobre-nos:hover {
+    transition: 0.4s;
+    background-color: #4d2265;
+    color: whitesmoke;
+}
+/*-=-=--=-=-=-=-=-==-= SESSÃO DE PRODUTOS-=-=-=-=-=-=-=-=-=-=-*/
+
+ .banner-produtos{
+     width: 100%;
+    height: calc(100vh - 20px);
+    background: url('imagens/usando-celular.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #771eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-banner-produtos {
+    width: 600px;
+}
+.titulo-banner-produtos p {
+    text-align: center;
+}
+
+.grid-produtos {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #008fed;
+  padding-bottom: 20px;
+}
+.box-celular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-celular img {
+    max-height: 250px;
+}
+.box-celular p {
+    margin: 5px;
+}
+.titulo-celular {
+    font-weight: bold;
+}
+.comprar-celular {
+    padding: 10px;
+    color: blanchedalmond;
+    background-color:#771eff;
+border-radius: 0px 20px 0px 20px;
+}
+.comprar-celular:hover {
+    background-color: rgb(83, 8, 153);
+    transition: 0.4s;
+    cursor: pointer;
+}
+/*-=-=--=-=-=-=-=-==-= PAGINA SOBRE NÓS-=-=-=-=-=-=-=-=-=-=-*/
+.sobre-nos-container {
+    background-color:#771eff;
+    color:whitesmoke;
+}
+.sobre-items {
+    display: flex;
+}
+.sobre-1, .sobre-2 {
+    padding: 100px;
+}
+.sobre-1 img{
+    height: 300px;
+    box-shadow: 19px 22px 0px 0px #00dbe8;
+    cursor: pointer;
+    
+}
+.sobre-1 img:hover {
+    transition: 0.3s;
+    filter:brightness(110%);
+}
+.sobre-2 p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.qualidades-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.qualidades-box img {
+    width: 100px;
+    margin-right: 50px;
+}
+.qualidades-box img:hover {
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+.qualidades-texto h1 {
+   margin-bottom: 10px;
+   font-size: 40px;
+}
+/*-=-=--=-=-=-=-=-==-= PAGINA FALE CONOSCO-=-=-=-=-=-=-=-=-=-=-*/
+.fale-conosco-box {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.fale-conosco-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    width: 200px;
+    border: none;
+    background-color: whitesmoke;
+    /* padding: 10px; */
+    height: 10px;
+}
+.fale-1 {
+    width: 400px;
+}
+.fale-1 h1 {
+    font-size: 35px;
+    color: whitesmoke;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 2px 
+    rgba(0, 165, 206, 0.61);
+}
+.fale-1 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.telefone-box {
+    display: flex;
+    align-items: center;
+}
+.telefone-box i {
+    color:rgb(0, 223, 11);
+    font-size: 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.telefone-box i:hover {
+    curso
+}
+.fale-2 img {
+    height: 500px;
+}
+.email-box {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.email-box i {
+    color:black;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+.redes-sociais {
+    display: flex;
+}
+.redes-sociais i {
+    margin: 30px 10px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.redes-sociais i:hover{
+    color:rgba(0, 0, 0, 0.65);
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #771eff;
+    padding: 20px;
+}
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke !important;
+}
+ input {
+     display: block;
+     height: 40px;
+     width: 400px;
+     margin: 10px;
+     border-radius: 50px;
+     border: 1px solid black;
+     font-size: 16px;
+     padding: 10px 20px;
+ }
+
+ #corpo-formulario {
+     width: 420px;
+     margin: 130px auto 0px auto;
+ }
+ #corpo-formulario-cad{
+    width: 420px;
+    margin: 60px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #corpo-formulario form {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+ }
+
+ #corpo-formulario h1, #corpo-formulario-cad h1 {
+    text-align: center;
+    color: black;
+    padding: 20px;
+ }
+
+ #corpo-formulario a {
+     text-decoration: none;
+     display: block;
+     text-align: center ;
+ }
+
+
+
+ /******************* CONTAINER MODAL ******************/
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+
+    /*Para ficar em cima do site inteiro*/
+    position: fixed;
+
+    /*Em seguida ele vai sumir, pra aparecer, definir posição do top e left para 0*/
+    top: 0px;
+    left: 0px;
+    z-index: 2000; /*Pra ficar por cima de tudo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal-imagem {
+    display: none;
+}
+.modal {
+    background-color: white;
+    width: 50%;
+    min-width: 500px;
+    padding: 20px;
+    border: 5px solid black;
+    position: relative;
+}
+.modal h3 {
+    color: black;
+    padding-bottom: 20px;
+}
+.modal img {
+    width: 100%;
+}
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    
+    to {    
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes slideLateral {
+    from {
+        opacity: 0;
+        transform: translate3d(-60px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.slideLateral {
+    animation: slideLateral .9s;
+}
+.modalAnimation {
+    animation: modal .3s;
+}
+.textoAnimation {
+    animation: modal .9s;
+}
+
+.fechar {
+    /*Para posicionar na extremidade do modal, precisamos aplicar o POSITION ABSOLUTE,
+     e top:0, porém se fizermos isso, o X estará absolute em relação a tudo. 
+     Para ficar absolute a esse elemento, vamos colocar posição relativa no Modal */
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0, .3);
+    font-size: 1.2em;
+}
+
+ input[type=submit] {
+background-color: blueviolet;
+color: white;
+width: 440px; 
+}
+
+div#msg-sucesso {
+    width: 420px;
+    margin: 20px auto 0px auto;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px dashed rgb(31, 139, 34);
+}
+
+div.msg-erro {
+    width: 400px;
+    margin: 20px auto 0px auto;
+    padding: 10px;
+    background-color: #FF0000;
+    border: 1px dashed black;
+    color: white;
+}
+
